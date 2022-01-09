@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/jpg" href="assets/img/airplane.jpg"/>
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<title>Dutch Ticket Deals</title>
+</head>
+<body>
+	<div class="header">
+		<h1><span class="emoji">&#128747;</span> Vind de beste ticket deals!</h1>
+	</div>
+
+	<!-- <form>
+		<input type="radio" name="depart" id="ams" value="Amsterdam">
+		<label>Amsterdam</label>
+		<input type="radio" name="depart" id="rtm" value="Rotterdam">
+		<label>Rotterdam</label>
+		<input type="radio" name="depart" id="ehv" value="Eindhoven">
+		<label>Eindhoven</label></br>
+	</form> -->
+
+	<h2> 
+		Van
+		<select id="departures" name="departures">
+			<option id="nl" value="Nederland">Nederland</option>
+			<option id="ams" value="AMS">Amsterdam</option>
+			<option id="rtm" value="RTM">Rotterdam</option>
+			<option id="ehv" value="EIN">Eindhoven</option>
+		</select>
+		naar
+		<select id="arrivals" name="arrivals">
+			<option id="worldwide" value="worldwide">Wereldwijd</option>
+			<option id="africa" value="africa">Afrika</option>
+			<option id="asia" value="asia">Azië</option>
+			<option id="europe" value="europe">Europa</option>
+			<option id="north-america" value="north-america">Noord-Amerika</option>
+			<option id="south-america" value="south-america">Zuid-Amerika</option>
+			<option id="oceania" value="oceania">Oceanië</option>
+		</select>
+		in 
+		<select id="months" name="months">
+			<option id="year" value="jaar">2022</option>
+			<option id="january" value="januari">Januari</option>
+			<option id="february" value="februari">Februari</option>
+			<option id="march" value="maart">Maart</option>
+			<option id="april" value="april">April</option>
+			<option id="may" value="mei">Mei</option>
+			<option id="june" value="juni">Juni</option>
+			<option id="july" value="juli">Juli</option>
+			<option id="august" value="augustus">Augustus</option>
+			<option id="september" value="september">September</option>
+			<option id="october" value="oktober">Oktober</option>
+			<option id="november" value="november">November</option>
+			<option id="december" value="december">December</option>
+		</select>
+		voor
+		<input type="number" id="daysOfStay" name="daysOfStay" min="1" value="5">
+		dagen. 
+	</h2>
+
+	<button onclick="searchDeals()" class="searchButton"><span class="emoji">&#128073;</span> Geef me die deals!</button> <br/>
+
+
+	<div class="showDeals"><p id="deals"></p></div>
+
+	<script src='assets/js/config.js'></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
